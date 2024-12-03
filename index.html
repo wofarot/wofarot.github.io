@@ -3,86 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой первый сайт</title>
+    <title>Моя визитка</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        nav a:hover {
-            color: #ffcc00;
-        }
-        main {
-            padding: 20px;
+        .card {
             background-color: #fff;
-            margin: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 20px;
+            width: 300px;
+        }
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .card h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .card p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #555;
+        }
+        .card .buttons {
+            margin-top: 20px;
+        }
+        .card .buttons a {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .card .buttons a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Добро пожаловать на мой сайт!</h1>
-    </header>
-    <nav>
-        <a href="#home">Главная</a>
-        <a href="#about">О нас</a>
-        <a href="#services">Услуги</a>
-        <a href="#contact">Контакты</a>
-    </nav>
-    <main>
-        <section id="home">
-            <h2>Главная</h2>
-            <p>Добро пожаловать на главную страницу моего сайта. Здесь вы найдете основную информацию.</p>
-        </section>
-        <section id="about">
-            <h2>О нас</h2>
-            <p>Здесь можно узнать больше о нас и о том, чем мы занимаемся.</p>
-        </section>
-        <section id="services">
-            <h2>Услуги</h2>
-            <p>Мы предлагаем следующие услуги:</p>
-            <ul>
-                <li>Услуга 1</li>
-                <li>Услуга 2</li>
-                <li>Услуга 3</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Контакты</h2>
-            <p>Свяжитесь с нами:</p>
-            <p>Телефон: +7 (123) 456-78-90</p>
-            <p>Email: info@mysite.com</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Мой сайт. Все права защищены.</p>
-    </footer>
+    <div class="card">
+        <img src="path/to/your/avatar.jpg" alt="Аватар">
+        <h1>Ваше имя</h1>
+        <p>Короткое описание о вас. Например, ваша профессия, увлечения и т.д.</p>
+        <div class="buttons">
+            <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com/yourprofile" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+        </div>
+    </div>
 </body>
 </html>
